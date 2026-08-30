@@ -1,0 +1,555 @@
+<meta name="robots" content="noindex, nofollow">
+<title>유채원 경력기술서</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ink: #1B2432;
+    --body: #39424E;
+    --muted: #68727E;
+    --accent: #24547F;
+    --rule: #D9DEE4;
+    --rule-strong: #B9C2CC;
+    --sheet: #FFFFFF;
+    --ground: #E8EBEE;
+    --sans: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    --mono: "IBM Plex Mono", Consolas, monospace;
+  }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    background: var(--ground);
+    color: var(--body);
+    font-family: var(--sans);
+    font-size: 13.5px;
+    line-height: 1.68;
+    margin: 0;
+    padding: 40px 16px 72px;
+  }
+
+
+  .sheet {
+    background: var(--sheet);
+    max-width: 760px;
+    margin: 28px auto 0;
+    padding: 58px 62px 66px;
+    box-shadow: 0 1px 2px rgba(27,36,50,.10), 0 12px 34px rgba(27,36,50,.13);
+    box-sizing: border-box;
+  }
+
+  /* ---------- header ---------- */
+  .doc-head { border-bottom: 2px solid var(--ink); padding-bottom: 22px; }
+  .doc-type {
+    font-family: var(--mono); font-size: 11px; font-weight: 500;
+    color: var(--accent); letter-spacing: .18em; text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-size: 30px; font-weight: 700; color: var(--ink);
+    letter-spacing: -.01em; margin: 0 0 4px; line-height: 1.25;
+  }
+  .role { font-size: 14px; font-weight: 500; color: var(--muted); margin: 0; }
+
+  .summary {
+    margin: 22px 0 0; padding: 0;
+    font-size: 13.5px; color: var(--body);
+  }
+  .summary p { margin: 0; }
+
+  /* ---------- company ---------- */
+  .company { margin-top: 40px; }
+  h2 {
+    font-size: 19px; font-weight: 700; color: var(--ink);
+    letter-spacing: -.005em; margin: 0;
+    display: flex; align-items: baseline; gap: 12px;
+  }
+  h2 .en {
+    font-family: var(--mono); font-size: 11px; font-weight: 400;
+    color: var(--muted); letter-spacing: .06em;
+  }
+  .company-rule { border: 0; border-top: 1px solid var(--rule-strong); margin: 10px 0 0; }
+  .company-intro { font-size: 13px; color: var(--muted); margin: 12px 0 0; }
+
+  /* company-level project capsule (NCSOFT overview) */
+  .capsule { margin: 16px 0 0; }
+  .capsule h4 { margin: 12px 0 2px; }
+  .capsule ul { margin: 2px 0 0; }
+
+  /* ---------- team / project ---------- */
+  .team { margin-top: 26px; }
+  .team-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 16px; flex-wrap: wrap;
+  }
+  h3 { font-size: 16px; font-weight: 700; color: var(--ink); margin: 0; }
+  .period {
+    font-family: var(--mono); font-size: 12px; font-weight: 500;
+    color: var(--accent); white-space: nowrap;
+  }
+  .meta {
+    margin: 8px 0 0; padding: 0 0 0 0;
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted);
+    line-height: 1.7; list-style: none;
+  }
+  .meta li { display: inline; }
+  .meta li + li::before { content: "\00a0\00a0·\00a0\00a0"; color: var(--rule-strong); }
+
+  /* ---------- numbered item group ---------- */
+  .item { margin-top: 22px; }
+  .item-head {
+    display: flex; align-items: baseline; gap: 10px;
+    border-bottom: 1px solid var(--rule); padding-bottom: 6px;
+  }
+  .item-no {
+    font-family: var(--mono); font-size: 12px; font-weight: 500;
+    color: var(--accent);
+  }
+  .item-head h4 { font-size: 14.5px; font-weight: 700; color: var(--ink); margin: 0; }
+  .item-lede { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+
+  /* ---------- sub block ---------- */
+  .block { margin-top: 12px; break-inside: avoid; page-break-inside: avoid; }
+  .block-label {
+    font-size: 13px; font-weight: 700; color: var(--ink);
+    margin: 0 0 2px;
+  }
+  ul { margin: 4px 0 0; padding-left: 18px; }
+  li { margin-top: 4px; }
+  li::marker { color: var(--rule-strong); }
+  strong { font-weight: 700; color: var(--ink); }
+  h4 { font-size: 13.5px; font-weight: 700; color: var(--ink); margin: 0; }
+
+  .foot {
+    margin-top: 46px; padding-top: 14px; border-top: 1px solid var(--rule);
+    font-family: var(--mono); font-size: 10.5px; color: var(--muted);
+    display: flex; justify-content: space-between; gap: 12px;
+  }
+
+  /* ---------- print ---------- */
+  @page { size: A4; margin: 15mm 16mm; }
+  @media print {
+    body { background: var(--sheet); padding: 0; font-size: 10.3pt; line-height: 1.6; }
+    .sheet { max-width: none; margin: 0; padding: 0; box-shadow: none; }
+    h1 { font-size: 21pt; }
+    h2 { font-size: 14pt; }
+    h3 { font-size: 12pt; }
+    .item-head h4 { font-size: 11pt; }
+    .company { break-inside: auto; }
+    .item-head, .team-head, .doc-head { break-inside: avoid; break-after: avoid; }
+    h2, h3 { break-after: avoid; }
+    .ncsoft { break-before: page; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+
+
+<main class="sheet">
+
+  <header class="doc-head">
+    <p class="doc-type">Career Description</p>
+    <h1>유채원</h1>
+    <p class="role">게임 서버 프로그래머 · C++ 실시간 Stateful Server / C# 라이브 API Server</p>
+    <div class="summary">
+      <p>C++ 실시간 Stateful 서버(액터 모델·지역 분할 멀티스레드)와 C# 라이브 API 서버(ASP.NET Core) 양쪽에서 게임 서버를 개발했습니다. 실시간 시뮬레이션에서는 상태 소유권과 서버-클라이언트 경계면(시야/스폰 동기화, 지역 경계 전이) 설계를, 라이브 서비스에서는 장애 전파 메커니즘 분석과 회복성 설계를 수행했습니다.</p>
+    </div>
+  </header>
+
+  <!-- ================= NETMARBLE NEO ================= -->
+  <section class="company">
+    <h2>넷마블네오 <span class="en">NETMARBLE NEO</span></h2>
+    <hr class="company-rule">
+
+    <div class="team">
+      <div class="team-head">
+        <h3>나 혼자만 레벨업:ARISE 서버팀</h3>
+        <span class="period">2026.02 — 현재</span>
+      </div>
+      <ul class="meta">
+        <li>라이브 2년차 액션 RPG · 글로벌 서비스</li>
+        <li>C# / .NET 10 / ASP.NET Core</li>
+        <li>MySQL(샤딩·복제) / Redis(Cluster·Sentinel)</li>
+        <li>라이브 API 서버 + 레이드 매칭 TCP 서버(C++/Boost.Asio)</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">01</span><h4>DB 장애 회복성 설계 — 포스트모템부터 검증까지</h4></div>
+      <p class="item-lede">라이브 MySQL이 1분간 응답 불능이 되자 게임 서버 전체가 다운된 장애를 계기로, 장애 전파 메커니즘을 분석하고 서킷브레이커 도입을 제안·설계·구현·검증한 전 과정을 담당했습니다. 본사 아키텍처최적화팀과의 검증을 거쳐 라이브 반영 예정입니다.</p>
+
+      <div class="block">
+        <p class="block-label">장애 메커니즘 분석 (포스트모템 작성)</p>
+        <ul>
+          <li>커넥션풀 고갈 → ThreadPool starvation → Kestrel accept queue 포화로, DB를 체크하지 않는 헬스체크 엔드포인트까지 실패하는 전파 경로를 코드 레벨로 규명.</li>
+          <li>실패 처리량 = MaxPoolSize / ConnectionTimeout ≈ 4.3 fails/sec 계산으로, 유입 트래픽이 이를 초과하는 한 <strong>자연 회복이 구조적으로 불가능</strong>함을 증명 — "1분 만의 회복은 운"이었음을 정량화해 도입 필요성 설득.</li>
+          <li>장애 중 CPU/메모리 지표가 평온한 stealth 장애임을 지적, 동일 전파 메커니즘 위험이 있는 Redis retry-only 정책(장애 시 부하 증폭)도 보완 대상으로 식별.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">서킷브레이커 설계·구현 (Polly 기반)</p>
+        <ul>
+          <li>DB별 회로 분리(한 샤드 장애가 다른 샤드 회로를 열지 않도록), 연속 실패 임계 기반 차단(fail-fast), 복구 시 다수 서버 동시 재연결(thundering herd)이 DB를 다시 다운시키지 않도록 재연결 지터 적용.</li>
+          <li>라이브 코드 변경의 리스크를 고려해 <strong>shadow 모드(관측만) → 실제 반영으로 단계적 롤아웃 설계, config 기반 즉시 비활성화</strong> 경로 구현.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">장애 재현 기반 검증</p>
+        <ul>
+          <li>Toxiproxy로 SYN 무응답 블랙홀 장애를 재현해 도입 전후 효과 비교 — 프로세스 kill과는 다른 장애 모드임을 구분해 실제 사고와 동일 조건으로 검증.</li>
+          <li>본사 아키텍처최적화 팀과 협업해 페일오버 테스트(마스터→슬레이브 전환 중 회로 개폐 확인), 썬더링 허드 테스트(Half-Open 단일 탐색이 동시 재연결을 막는지 확인) 수행.</li>
+          <li>동반 개선으로 ConnectionTimeout 단축(15초 → 3초, 장애 검출·회로 진입 속도 개선)을 제안</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">02</span><h4>멀티리전(KR/US) 전환 성능테스트 : 환경 구축 및 결함 진단</h4></div>
+      <p class="item-lede">KR 단일 리전 → KR(마스터) + US(AWS) 멀티리전 전환의 성능 검증 단계에서, 실장비(AWS) 테스트 환경을 세팅하고 기능·인프라·측정 품질의 결함을 진단·수정하는 역할을 담당했습니다. 배포 전 리스크 사전 도출부터 결함 전달·조치 유도, 테스트 절차 인계까지 본사 아키텍처최적화팀·인프라팀·DBA와 협업하는 게임서버 측 창구를 전담했습니다.</p>
+
+      <div class="block">
+        <p class="block-label">인프라 실측 검증 및 장애 격리</p>
+        <ul>
+          <li>US 리전 게임서버에서 네트워크 도달성 매트릭스(로컬 DB/Redis, KR VIP TLS 핸드셰이크)를 직접 검증하고, DB 복제 상태 실측(read_only/server_id)으로 "HA 쌍이 아닌 독립 샤드 구성"임을 확정해 Config 구성의 근거 확보.</li>
+          <li>게임서버 부팅 실패의 원인을 <strong>보안그룹 인바운드 누락 → LB 헬스체크 실패 → 타겟 언헬시</strong>로 규명하고, KR→AWS 통신 불가를 사설망 라우팅 부재로 격리 : 각 이슈를 출발지-목적지-포트 단위로 특정해 인프라팀 조치를 이끌어냄.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">서킷브레이커 회로 격리 결함 발견·수정</p>
+        <ul>
+          <li>회로 키가 dbid 단독이어서, 같은 dbid를 공유하는 GameDB/LogDB/EventDB 간에 <strong>한 DB의 장애가 무관한 DB까지 차단하는 격리 실패</strong>를 발견.</li>
+          <li>회로 키를 {DB종류}:{dbid}로 수정해 특정 DB 장애 시 다른 DB 무영향 검증이 성립하도록 함.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">테스트 실행 기반 구축</p>
+        <ul>
+          <li>리전별 로그인/길드 생성/크로스리전 조회/글로벌 DB 하드차단 등 기능 테스트를 수행하고, 봇 프레임워크의 미해결 버그가 서버가 아닌 도구의 프로토콜 정의 누락임을 브랜치 대조로 규명.</li>
+          <li>측정 품질 개선: DB 장애 시 봇의 즉시 재로그인이 실클라이언트와 다른 부하 패턴을 만드는 문제를 양쪽 재시도 로직 코드 대조로 확인해 재로그인 페이싱 추가, 외부 플랫폼 API mock에 리전별 응답 지연을 세팅해 실환경 지연 모사, 측정 노이즈(비정상 응답률)를 비게임 트래픽으로 규명해 관측 쿼리 정리.</li>
+          <li>서킷브레이커 검증 항목(장애 시 생존, 복구 시 thundering herd 방지)과 최적 테스트 대상을 정의하고, 아키텍처팀이 그대로 실행 가능한 failover 테스트 절차서(선행조건·단계별 명령·성공/실패 판정)로 인계.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">03</span><h4>레이드 매칭 TCP 서버(C++/Boost.Asio) 동시접근 크래시 분석</h4></div>
+      <div class="block">
+        <ul>
+          <li>룸 상태(유저 맵)가 세션 strand와 룸 strand 두 실행 컨텍스트에서 동시 접근되어 발생한 라이브 크래시 원인 분석 — 기존 mutex가 일부 경로만 보호하는 불충분 동기화였음을 규명.</li>
+          <li>상태 소유권을 룸 strand로 단일화하는 수정안 작성: 상태 변경 API를 private으로 내리고 Post 래퍼만 노출(직접 호출을 컴파일 타임에 차단), strand 위반을 런타임에 감지하는 assert 매크로, strand 밖 직접 호출이 남아있던 disconnect 경로 post화.</li>
+          <li>채택된 핫픽스 이후에도 남아있는 잠재 크래시 경로(인터컴 disconnect의 strand 밖 직접 호출)와 재발 감지 장치 부재를 식별해 문서화 — 두 수정 방향의 trade-off(크래시 원인 설계 레벨에서 수정 vs 최소 수정)를 비교 분석.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">04</span><h4>레거시 우편 인터페이스 캡슐화</h4></div>
+      <div class="block">
+        <ul>
+          <li>십수 개로 난립한 우편 전송 인터페이스를 단일 전송/리스트 전송 2개로 통합.</li>
+          <li>호출부마다 중복 구현되던 "만료일 0 = 무기한" 도메인 규칙을 우편 도메인 내부로 캡슐화 — 호출자는 데이터 id만 넘기면 되는, 규칙을 몰라도 실수할 수 없는 API로 재설계.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">05</span><h4>AX 겸직 — 사내 LLM 도구 개발</h4></div>
+      <div class="block">
+        <ul>
+          <li>사내 기획서 RAG 챗봇을 설계부터 구축까지 단독 수행 — 하이브리드 검색(벡터+BM25) 기반, MCP 서버 연동.</li>
+          <li>회의록 RAG 확장 설계: STT 회의 녹취를 그대로 임베딩하지 않고 "결정 레코드"(결정·사유·출처 구간)로 구조화 추출 후 인덱싱하는 파이프라인 설계. GraphRAG는 필요성을 입증할 때까지 보류 : 비용-효과 기준으로 기법 선택.</li>
+          <li>컨텐츠 코드 자동생성의 멀티에이전트(AutoGen) vs 단일 세션 벤치마크 설계·실행: 실제 성능 변수는 에이전트 아키텍처가 아니라 컨텍스트·지침 품질이라는 가설 하에, 동일 기획서·동일 지침· 채점셋의 실험 설계. 멀티에이전트가 품질 동등 이하에 비용(토큰 량)·시간 약 2배, LLM 리뷰어의 승인 오탐 반복을 확인해 도입 보류 권고. 유행 기법을 도입 전에 실효성으로 검증.</li>
+          <li>기획자용 웹툴 허브 구축·운영, 기획 데이터 서밋 검증·테이블 리캐시 자동화 체인(Perforce trigger → CI → 사내 메신저 알림) 구성.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NCSOFT ================= -->
+  <section class="company ncsoft">
+    <h2>엔씨소프트 <span class="en">NCSOFT</span></h2>
+    <hr class="company-rule">
+    <p class="company-intro">Actor 기반(상태 소유권/메시지 큐)과 지역 스레드 기반(공간 파티셔닝/경계 전이) 멀티스레드 모델 각각에서 상태 일관성과 충돌 최소화를 설계 기준으로 게임 서버를 개발했습니다.</p>
+
+    <div class="capsule">
+      <h4>TACTAN Server — Actor 기반 Stateful / 멀티스레드</h4>
+      <ul>
+        <li>서버 병목 지점 분석 및 성능/안정성 개선을 위한 구조 변경 수행.</li>
+        <li>Stateful Server 기반 게임 콘텐츠 시스템 요구 분석 및 구현.</li>
+        <li>운영 변경 대응 &amp; 스키마/데이터 확장성을 고려한 코드 설계.</li>
+      </ul>
+      <h4>Project LLL GameplayServer — 지역 기반 멀티스레드 / 심리스 오픈월드</h4>
+      <ul>
+        <li>지역 매니저/월드 매니저 기반 스레드 동기화 구조에서 상태 일관성 확보.</li>
+        <li>심리스 오픈월드의 지역 경계 판정·권위 전이 인터페이스 구현.</li>
+        <li>더미 부하 테스트/지표 수집/시각화 기반 성능 분석.</li>
+      </ul>
+    </div>
+
+    <!-- ---------- TACTAN ---------- -->
+    <div class="team">
+      <div class="team-head">
+        <h3>TACTAN 서버 1팀</h3>
+        <span class="period">2024.04 — 2025.09</span>
+      </div>
+      <ul class="meta">
+        <li>대규모 전략 시뮬레이션(4X/SRPG)</li>
+        <li>PC/Mobile 크로스 플랫폼</li>
+        <li>Unreal Engine 4 / C++ / MSSQL</li>
+        <li>실시간 Stateful Server · 액터 기반 멀티스레드</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">01</span><h4>서버 성능/안정성 개선</h4></div>
+
+      <div class="block">
+        <p class="block-label">전투/이벤트 시 액터 간 스레드 충돌 및 메시지 지연</p>
+        <ul>
+          <li>담당 파트 내 액터 실행 순서를 재배치해 잘못된 스레드 접근과 메시지 지연을 해소.</li>
+          <li>이후 동일 원인의 스레드 경합 로그가 재발하지 않도록 처리 경로 정리.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">패킷 트래픽 과다로 인한 처리량 병목</p>
+        <ul>
+          <li>내부 프로파일러의 호출 빈도/전송량 지표로 병목 항목 식별.</li>
+          <li>고빈도 항목 분리 + 로직 최적화 → 내부 전투 테스트 기준 초당 트래픽 약 20% 감소.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">SharedPtr 생명주기 꼬임 / 메모리 오염 해결</p>
+        <ul>
+          <li>특정 오브젝트 파괴 시 SharedPtr 참조 잔존으로 해제가 누락되는 문제를 관련 경로 전수 조사로 확인, WeakPtr 전환이 필요한 구간을 식별해 반영.</li>
+          <li>재현이 어려워 잡히지 않던 메모리 오염을 탐지하기 위해 내부 Stomp 기반 allocator 랩핑 클래스를 도입 — 오염 발생 지점(BehaviorTree 경로)을 특정해 수정으로 연결.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">02</span><h4>상태 기반 서버에서의 시스템 설계</h4></div>
+      <p class="item-lede">단일 요청 처리보다 상태의 흐름과 동시성/정합성 기준을 우선해, Stateful 서버 환경에서 충돌 없는 상태 전이를 설계한 사례입니다.</p>
+
+      <div class="block">
+        <p class="block-label">실시간 기반 우편 시스템</p>
+        <ul>
+          <li>전투 종료, 길드 활동 등 실시간 인게임 이벤트 기반 우편 생성 및 상태 관리.</li>
+          <li>동일 유저에 대한 우편 요청을 유저 액터의 메시지 큐에서 순차 처리 — 동시 로그인/다중 클라이언트 요청 상황에서도 상태 일관성 유지.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">가챠 상태 동기화 시점 개선 (부하 분산)</p>
+        <ul>
+          <li>픽업 가챠 종료 시점(자정)에 전 유저의 가챠 정보를 일괄 갱신하면서 서버 부하가 자정에 집중되는 문제.</li>
+          <li>"자정 일괄 갱신(부하 집중)" 대신 "유저가 가챠를 시도하는 시점에 서버 상태와 비교해 필요할 때만 동기화(지연 동기화)"를 선택 — 자정에는 서버 전역 가챠 정보만 갱신.</li>
+          <li>부하를 유저 행동 시점으로 분산하면서 전역/유저 가챠 정보 간 정합성 유지.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">서버 시즌 특수 아이템 설계</p>
+        <ul>
+          <li>시즌별로 서버에 단 한 개만 존재하는 특수 아이템의 생성 → 쟁탈(PvP) → 소유권 변경 → 소멸 전체 생명주기를 월드 단위로 관리하는 시스템 구현.</li>
+          <li>생성/소멸 조건을 시즌 상태와 연동해 생성 가능 시점, 제거 조건, 중복 스폰 방지 관리.</li>
+          <li>시즌 종료 시 전역 상태 전환 → 월드 액터 메시지 → 유저 액터 정리 순의 단일 방향 생명주기 보장.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">튜토리얼 서버와 본 서버 간 상태 동기화</p>
+        <ul>
+          <li>튜토리얼 시스템 구현 및 튜토리얼 종료 시 서버 간 유저 데이터 이전 처리.</li>
+          <li>이전 시 동기화되어야 하는 데이터 리스트 관리 및 일관성 유지.</li>
+          <li>이전 진행 중 여부 검증 로직으로 이관 중 중복 요청에 의한 상태 덮어쓰기 차단.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">03</span><h4>대량/고빈도 처리 최적화</h4></div>
+      <p class="item-lede">대량 요청·고빈도 이벤트를 기능별 예외처리 대신 공통 처리 패턴(파티셔닝/리스트 프로시저/지연 동기화)으로 통합했습니다.</p>
+
+      <div class="block">
+        <p class="block-label">우편 대량 처리 &amp; 메모리/DB 정책</p>
+        <ul>
+          <li>대량 우편 처리 시 DB 파라미터 제한/지연 문제를 분할 전송 + 리스트 프로시저 + 실패 항목 분리 처리 구조로 해결.</li>
+          <li>클라이언트/서버 테스트로 1회 처리 상한을 100개로 산정, DB 처리 결과를 리스트로 받아 개별 성공/실패 분리 관리 — 단일 트랜잭션 강제 대신 안정성과 체감 품질을 고려한 trade-off 설계.</li>
+          <li>우편 데이터 캐싱 + 페이징 전송 + 세션 만료 관리(로그아웃 시 캐시 해제)로 메모리 사용량과 DB 접근 균형화.</li>
+          <li>UID 기준 우편 목록/본문 DB 테이블 파티셔닝 반영(DBA 협업).</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">장착 아이템 대량 분해 최적화</p>
+        <ul>
+          <li>테스트 기반으로 최대 분해 개수 산정 후 Config화.</li>
+          <li>패킷과 DB 프로시저를 리스트 기반 단일 프로시저로 최적화.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">길드 경작지 &amp; 길드 공헌도 로직 최적화</p>
+        <ul>
+          <li>틱마다 경작 진행도/획득량을 계산·전송하던 방식을 이벤트 기반 계산으로 전환해 패킷 부하 절감.</li>
+          <li>지속 활동(길드 건물 건설) 중 초 단위 공헌도 지급 요구사항에 대해, 지급 주기를 Config로 관리하고 주기마다 참여 길드원을 묶어 DB 업데이트와 패킷 전송을 각 1회로 배칭.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">04</span><h4>운영 변경 대응 &amp; 스키마/데이터 확장성</h4></div>
+      <p class="item-lede">기획 변경/운영 스케줄/QA 요구에 코드 수정이 아닌 데이터 조정만으로 대응되도록 스키마와 정책을 설계했습니다.</p>
+
+      <div class="block">
+        <p class="block-label">가챠 시스템 운영 스케줄링</p>
+        <ul>
+          <li>픽업 가챠 종료 시점에 일반 가챠 풀 자동 갱신 및 DB 반영.</li>
+          <li>실서비스 운영 중 가챠 정보를 즉시 수정·반영할 수 있도록 별도 DB 테이블로 분리.</li>
+          <li>가챠 확률 검증 시뮬레이션 커맨드 구현 — 지정 횟수(예: 1만 회) 자동 수행 후 아이템별 실제 선택 비율을 로그로 출력, 입력 확률 대비 검증 지원.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">영지 장식 오브젝트 구조 개선</p>
+        <ul>
+          <li>유저 레벨 상승 시 최대 개수만큼 선지급하던 방식을 실제 배치 시점에 사용분만 저장하는 방식으로 개편.</li>
+          <li>신규 DB 테이블 구조 설계, 레거시 테이블 관련 코드 제거 및 데이터 마이그레이션 수행.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">업적 &amp; 컬렉션 / 장착 아이템 구조 개선</p>
+        <ul>
+          <li>업적&amp;컬렉션을 퀘스트 기반으로 확장 — 퀘스트 데이터만 추가하면 업적&amp;컬렉션이 자동 진행/완료되는 구조로 설계.</li>
+          <li>장착 아이템 공통 로직을 상위 클래스로 이전 — 신규 장착 아이템 타입 추가 시 코드 중복 없이 데이터 추가만으로 확장.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ---------- LLL ---------- -->
+    <div class="team">
+      <div class="team-head">
+        <h3>Project LLL GameplayServer</h3>
+        <span class="period">2022.01 — 2024.03</span>
+      </div>
+      <ul class="meta">
+        <li>MMOTPS / 루트 슈터</li>
+        <li>PC/Console 크로스 플랫폼</li>
+        <li>Unreal Engine 5</li>
+        <li>심리스 오픈월드 · 지역 분할 멀티스레드</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">01</span><h4>심리스 오픈월드 지역 분할 / 존 경계 처리</h4></div>
+      <div class="block">
+        <p class="block-label">존 겹침 판정 및 권위 전이 인터페이스 구현</p>
+        <ul>
+          <li>지역별 스레드가 분리된 심리스 오픈월드에서, 오브젝트가 지역 경계를 넘을 때의 판정·전이 인터페이스를 엔진팀 협업 창구를 전담하며 구현.</li>
+          <li>엔진팀이 월드에 마킹한 레이어(비트마스크) 기반 발밑 쿼리로 존 겹침을 판정 — 여러 존에 걸친 오브젝트는 겹침 존들에 레플리카를 생성하고, 완전 이탈 시 원본을 파괴하며 권위를 이전하는 경계 전이 흐름을 서버 측에서 처리.</li>
+          <li>엔진팀 제공 지역/경계 추출 기능을 서버 관점에서 테스트하고 버그 리포트·개선점을 피드백, 추출된 정보 기반으로 오브젝트 배치·지역 변경·상태 전파 로직을 정비.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">02</span><h4>인터랙터블 오브젝트 시스템 신규 개발</h4></div>
+      <p class="item-lede">G-Star 출품 버전을 1차 목표로, 조건 충족 시 정의된 동작을 수행하는 인터랙터블 오브젝트 시스템을 신규 개발했습니다.</p>
+
+      <div class="block">
+        <p class="block-label">State Machine + Data-Driven 설계</p>
+        <ul>
+          <li>오브젝트의 상태, 전환 조건, 다음 상태, 입장/퇴장 시 동작을 모두 데이터 테이블에서 정의 — 기획/레벨 디자인 팀이 코드 수정 없이 오브젝트 타입을 확장할 수 있는 구조.</li>
+          <li>G-Star 빌드의 빠른 수정·반영 사이클 대응.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">설치형 부활 포인트 (크로스-존 상태 동기화)</p>
+        <ul>
+          <li>설치 후 상호작용 시 해당 위치를 부활 지점으로 등록하는 오브젝트 — 존 전체에서 상태가 동기화되어야 하는 전역 오브젝트.</li>
+          <li>지역 매니저가 변경 발생 시 월드 매니저에 이벤트 통보 → 월드 매니저가 관련 지역 전체에 브로드캐스트하는 구조로, 지역 분할 멀티스레드 환경에서 상태 일관성 유지.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">개인화 오브젝트 (관찰자별 상태 투영)</p>
+        <ul>
+          <li>메인 퀘스트 진행도에 따라 동일 오브젝트가 플레이어마다 다른 상태로 보여야 하는 요구 — 열림 조건이 서버 권위 데이터라 클라이언트 단독 처리 불가.</li>
+          <li>동기화 단위를 "오브젝트의 상태"에서 "플레이어별 상태"로 분리: 공유 상태는 브로드캐스트, 개인화 상태는 시야 진입 시 관찰자별로 계산해 해당 유저에게만 유니캐스트.</li>
+          <li>시야 이탈 시 플레이어별 상태를 해제하고 재진입 시 마지막 상태 기준으로 복구해 메모리 최적화.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">03</span><h4>게임 서버 테스트 자동화 &amp; 성능 분석</h4></div>
+
+      <div class="block">
+        <p class="block-label">테스트 자동화 시스템 구성</p>
+        <ul>
+          <li>서버 실행 → 더미 클라이언트 실행 → 시나리오 수행까지 전체 테스트 플로우를 배치 자동화.</li>
+          <li>맵/더미 수/반복 횟수/측정 여부를 스크립트로 외부 정의하는 Data-Driven 시나리오 구성 — 코드 수정 없이 시나리오 교체만으로 다양한 검증 수행.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">Grafana 기반 성능 모니터링</p>
+        <ul>
+          <li>게임 오브젝트 스폰 수, 서버 메모리 증가율 등 주요 지표를 수집해 Grafana 대시보드로 시각화.</li>
+          <li>부하 테스트 결과 비교, 시나리오별 메모리 패턴 분석, 기능 업데이트 후 성능 저하 검증에 활용 — 서버 최적화와 메모리 릭 탐지로 연결.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">04</span><h4>XML 스크립트 시스템 개발</h4></div>
+      <p class="item-lede">월드 이벤트(플레이어 이동 기반 동적 스폰)와 연동되는 XML 스크립트 시스템의 기능 개발, 검증 자동화, 디버그 툴링을 담당했습니다.</p>
+
+      <div class="block">
+        <p class="block-label">스크립트 엔진 기능 확장</p>
+        <ul>
+          <li>스크립트 문법 스키마 관리, 자동 완성 지원용 스키마 기반 자동 생성 파일(코드/데이터 정의) 유지보수.</li>
+          <li>스크립트에서 호출하는 하위 동작 함수(조건 검사·오브젝트 조작·트리거) 구현, AI behavior/미션 로직/월드 이벤트 등 다양한 콘텐츠로 스크립트 사용 범위 확장.</li>
+          <li>플레이어 이동 경로에 따라 NPC/차량/오브젝트를 동적 스폰하는 월드 이벤트 시스템과 연동 — 이벤트 생성 시 지정 XML 스크립트 자동 실행.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">검증 자동화 (CI/CD)</p>
+        <ul>
+          <li>스크립트 파일의 문법 오류·잘못된 참조를 감지하는 검증 Commandlet 개발.</li>
+          <li>게임 서버 로드 시와 TeamCity CI/CD 파이프라인 양쪽에서 실행되도록 연동 — 잘못된 스크립트가 서버 로직 오류로 이어지는 문제를 커밋 단계에서 차단.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="block-label">Graphviz 기반 디버그 툴 개발</p>
+        <ul>
+          <li>스크립트 사용 범위가 늘며 콘텐츠 디자이너가 동작을 파악하기 어려워진 문제에 대해, Graphviz + DOT 기반 시각화 디버그 툴을 R&amp;D부터 구현까지 수행.</li>
+          <li>스크립트의 실시간 동작 흐름, 현재 실행 상태·조건·변수 값을 그래프로 탐색 가능 — 디자이너의 제작/디버깅 효율과 스크립트 기반 콘텐츠 개발 속도 향상.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><span class="item-no">05</span><h4>에디터 제작 편의성 개선</h4></div>
+      <div class="block">
+        <ul>
+          <li>엔진팀·기획팀과 협의해 언리얼 에디터의 오브젝트 제작·월드 배치 작업 흐름 개선.</li>
+          <li>인터랙터블 오브젝트 Prefab 참조를 Alias 기반 매핑에서 태그 기반으로 전환해 확장성 확보.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <span>유채원 — 경력기술서</span>
+      <span>NCSOFT 2022.01–2025.09 · NETMARBLE NEO 2026.02–</span>
+    </footer>
+  </section>
+
+<p style="text-align:right;margin:28px 0 0"><a href="./" style="font-family:var(--mono);font-size:12px;color:var(--accent);text-decoration:none;letter-spacing:.08em">&larr; RESUME</a></p></main>
