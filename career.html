@@ -245,7 +245,7 @@
       <div class="block">
         <p class="block-label">인프라 실측 검증 및 장애 격리</p>
         <ul>
-          <li>US 리전 게임서버에서 네트워크 도달성 매트릭스(로컬 DB/Redis, KR VIP TLS 핸드셰이크)를 직접 검증하고, DB 복제 상태 실측(read_only/server_id)으로 'HA 쌍이 아닌 독립 샤드 구성'임을 확정해 Config 구성의 근거 확보.</li>
+          <li>US 리전 게임서버에서 네트워크 도달성 매트릭스(로컬 DB/Redis, KR VIP TLS 핸드셰이크)를 직접 검증하고, DB 복제 상태 실측(read_only/server_id)으로 'HA 쌍이 아닌 독립 샤드 구성'임을 확정해 Config 구성.</li>
           <li>게임서버 접속 불가의 원인을 <strong>보안그룹 인바운드 누락으로 LB 헬스체크가 실패해 대상이 트래픽에서 제외된 것</strong>으로 규명하고, KR→AWS 통신 불가를 사설망 라우팅 부재로 확정 : 각 이슈를 출발지-목적지-포트 단위로 특정해 인프라팀 조치를 이끌어냄.</li>
         </ul>
       </div>
